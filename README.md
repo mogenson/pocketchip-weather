@@ -4,7 +4,7 @@
 
 ### Here's a BASH script to fetch the current weather from http//wttr.in and display it in ASCII in the PocketCHIP's terminal.
 
-Download from your PocketCHIP with the command: `wget tiny.cc/getweather`
+Download from your PocketCHIP with the command: `wget http://tiny.cc/getweather`
 
 Make it executable with: `chmod +x getweather`
 
