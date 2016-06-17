@@ -66,7 +66,14 @@ function main {
 
     fetch_weather # fetch at least once
 
-    while [ "$INTERVAL" -gt 0 ]
+    if [ "$INTERVAL" -eq 0 ]
+    then
+        exit 0
+    fi
+    
+    xset -s off -dpms # keep screen from blanking
+
+    while true
     do
         fetch_weather # fetch weather continuously
     done
